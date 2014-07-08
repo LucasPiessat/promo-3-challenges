@@ -4,13 +4,13 @@
 
 def get_rid_of_surrounding_whitespaces(a_string)
   a_string.strip
-end
+
   # TODO: return a copy of the string with leading and trailing whitespaces removed
   # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
 end
 
 def belongs_to?(a_string, a_word)
-  a_word.include? a_string
+  a_string.include? a_word
 end
   # TODO: return true if a_string contains a_word
   # example: belongs_to?("hey jude", "jude") => true
