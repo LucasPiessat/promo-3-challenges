@@ -36,6 +36,7 @@ def first_under(array, limit)
 end
 
 def add_bang(array)
+    array.map { |x| x + "!"}
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
 end
