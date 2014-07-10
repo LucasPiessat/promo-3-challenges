@@ -30,6 +30,7 @@ def short_words(array, max_length)
 end
 
 def first_under(array, limit)
+    array.find {|x| x < limit}
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
 end
