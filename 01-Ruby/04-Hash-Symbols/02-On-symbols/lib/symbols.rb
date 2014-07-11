@@ -8,10 +8,12 @@
 # irb> "foo".object_id
 
 def are_identical_symbols_same_objects?
+    true
   # TODO: true or false?
 end
 
 def are_identical_strings_same_objects?
+    false
   # TODO: true or false?
 end
 
@@ -21,17 +23,28 @@ end
 # - http://www.ruby-doc.org/core-2.1.1/Symbol.html
 
 def convert_string_to_symbol(a_string)
+    a_string.to_sym
   # TODO: return the symbol version of "a_string"
 end
 
 def convert_symbol_to_string(a_symbol)
+    a_symbol.to_s
   # TODO: return the string version of "a_symbol"
 end
 
 def me
+  self_def = {
+    name: "Lucas",
+    age: 24,
+    profession: "unemployed"
+  }
+  return self_def
+
   # TODO: return a Hash representing yourself, with keys such as age and name
 end
 
 def fruits
+  fruit = ["orange","lemon","strawberry"]
+  return fruit
   # TODO: return an array of fruits
 end
