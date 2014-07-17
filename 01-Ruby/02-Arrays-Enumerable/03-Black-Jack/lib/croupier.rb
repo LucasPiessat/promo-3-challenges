@@ -31,6 +31,7 @@ def asking_for_card?(score)
         else return false
       end
   else
+    #On peut remplacer tout ca par player_answer =="Y"|| player_answer =="yes" a la place du case>when>...
       return false
   end
   # TODO: Ask for a card only if the score is less or equal to 21, then returns true or false according to the user's choice

@@ -28,8 +28,8 @@ def cheat
 end
 
 def status_Player
-  if (@position >100):win
-  elsif (@position<0):loose
+  if @position > 100 :win
+  elsif @position < 0 :loose
   else
     :play
   end
