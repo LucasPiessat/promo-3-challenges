@@ -18,3 +18,4 @@ end
 jojo = Panda.new(80, 180, "red")
 
 jojo.crucified?
+
