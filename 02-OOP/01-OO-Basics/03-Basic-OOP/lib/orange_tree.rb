@@ -35,6 +35,4 @@ class OrangeTree
       @fruits = 0
     end
   end
-
-
 end
