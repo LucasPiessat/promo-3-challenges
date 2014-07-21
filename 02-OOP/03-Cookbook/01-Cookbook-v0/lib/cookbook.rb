@@ -19,25 +19,39 @@ class Cookbook
     save
   end
 
+  def add_marmiton_recipes(recipes_to_load)
+    recipes_to_load.each do |recipe|
+      @recipes << recipe
+    end
+    save
+  end
+
   def save
     CSV.open(@cookbook_file_path, 'w') do |csv|
       @recipes.each do |recipe|
-        csv << [recipe.name, recipe.description]
+        csv << [recipe.name, recipe.description, recipe.rating]
       end
     end
   end
 
   def load_csv(file)
     CSV.foreach(file) do |row|
-      each_recipe = { name: row[0], description: row[1] }
+      each_recipe = { name: row[0], description: row[1], rating: row[2] }
       @recipes << Recipe.new(each_recipe)
     end
   end
 
   def remove_recipe(recipe_id)
-    @recipes.delete_at(recipe_id)
+    @recipes.delete_at(recipe_id - 1)
 
     save
   end
 
 end
+
+#cbr = CookBookRepository.new
+#cbr.add("Pates au poulet")
+#cbr.add("Marinade de saumon")
+#cbr.add("Lasagna")
+
+#cbr.delete("Pates au poulet")
