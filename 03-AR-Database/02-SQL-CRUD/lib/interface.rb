@@ -5,10 +5,10 @@ def ask_and_get(param)
   gets.chomp
 end
 
-db_path = "db/news.sqlite"
+db_path = "lib/db/news.sqlite"
 db = SQLite3::Database.new(db_path)
 
-create_scheme(db) 
+create_scheme(db)
 
 while true
 
@@ -17,10 +17,10 @@ while true
   puts "2. Read your posts"
   puts "3. Delete all posts"
   puts "4. Exit"
-  
+
   # TODO: add other CRUD tasks if you wish!
 	choice =  gets.chomp.to_i
-	
+
 	case choice
   when 1
     name = ask_and_get("name")
@@ -32,8 +32,8 @@ while true
     get_posts(db)
   when 3
     delete_posts(db)
-  when 4 
+  when 4
     break
-	end 
-	
+	end
+
 end

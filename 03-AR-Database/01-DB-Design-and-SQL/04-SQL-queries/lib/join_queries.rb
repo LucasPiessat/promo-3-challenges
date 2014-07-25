@@ -32,7 +32,7 @@ end
 
 
 def top_five_rock_artists(db)
-  #TODO: return list of top 5 rock artists
+  #TOD O: return list of top 5 rock artists
   db.execute("SELECT Artist.Name, Count(Track.TrackId) AS nb_track
               FROM Artist
               JOIN Album ON Artist.ArtistId = Album.ArtistId
