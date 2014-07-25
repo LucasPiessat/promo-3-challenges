@@ -24,15 +24,15 @@ def create_post(db, post)
 end
 
 def get_posts(db)
-  db.execute("SELECT * FROM news")
-  puts "id : #{row[0]} // name : #{row[1]} // rating : #{row[2]} // source_url : #{row[3]} // date : #{row[4]}"
-   puts "*" * 100
+  rows = db.execute("SELECT * FROM news")
+    rows.each do |row|
+    puts "id : #{row[0]} // name : #{row[1]} // rating : #{row[2]} // source_url : #{row[3]} // date : #{row[4]}"
+    end
 end
 
 def get_post(db, id)
-  db.execute("SELECT * FROM news WHERE id = #{id.to_i}")
+  row = db.execute("SELECT * FROM news WHERE id = #{id.to_i}")
   puts "id : #{row[0]} // name : #{row[1]} // rating : #{row[2]} // source_url : #{row[3]} // date : #{row[4]}"
-   puts "*" * 100
 
 end
 
@@ -49,3 +49,5 @@ end
 def delete_post(db, id)
   db.execute("DELETE FROM news WHERE id = #{id.to_i}")
 end
+
+
