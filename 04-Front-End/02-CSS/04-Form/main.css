@@ -1,6 +1,37 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
 }
 
-/*Add some CSS rules to design your form */ 
+header {
+  background: black;
+  color: white;
+  position: fixed;
+  width: 1270px;
+  height: 100px;
+  right :0px;
+  left: 0px;
+  top: 0px ;
+}
+h1 {
+  display: inline-block;
+  width: 500px;
+  margin-left: 200px;
+  color:#E97451;
+}
+
+h2 {
+  display: inline-block;
+  font-family: garamond;
+  color :#DA3287;
+}
+.content{
+  padding-top: 120px;
+
+}
+h3 {
+  color: #730800;
+
+}
+
+/*Add some CSS rules to design your form */
