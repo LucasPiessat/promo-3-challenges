@@ -9,15 +9,16 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css"
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="zoom: 1;">
 
+
+  <body>
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,109 +64,33 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
-
-    <div class="wrapper">
-  <div class="lead">
-    <h1>FAÇONNEZ LYON</h1>
-    <h2>La fabrique canut</h2>
     <div class="vertical-spacer"></div>
-    <p>
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderForm">
-        Activez le bistanclaque
-      </button>
-    </p>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Rejoignez-nous !</h4>
+    <div id="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11130.407128191497!2d4.826775799999999!3d45.779170349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb1eb2c579ef%3A0xad42a6e9b6b1d4ad!2sLa+Croix-Rousse%2C+69004+Lyon!5e0!3m2!1sfr!2sfr!4v1406891430983" width="550" height="440" frameborder="0" style="border:0"></iframe>
       </div>
-
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+          <div class="col-lg-6">
+            <p>
+              <h3>Contact</h3>
+              <ul>
+                <li><i class="fa fa-phone"> Téléphone : </i> 04.78.00.00.00 </li> <br>
+                <li><i class="fa fa-facebook"> Facebook :</i> XXX</li> <br>
+                <li><i class="fa fa-google-plus"> Google + : </i> XXX</li> <br>
+                <li><i class="fa fa-twitter"> Twitter : </i> @canut </li> <br>
+                <li><i class="fa fa-envelope"> Mail : </i> canut@canut.com</li> <br>
+                <li><i class="fa fa-skype"> Skype : </i> XXXXX </li><br>
+                <li><i class="fa fa-home"> 9 rue de la martinière <br> 69001 Lyon</i></li> <br>
+                <li> <em> N'hésitez pas à passer ! (Prière de nous l'annoncer avant !) </em></li>
+              </ul>
+            </p>
+            <br>
     </div>
-  </div>
-</div>
-
-<div class="vertical-spacer"></div>
-
-<div class="container">
-  <div class="row text-center">
-    <div class="col-sm-6 col-md-3">
-      <div class="feature">
-        <div class="feature-picture">
-          <img src="img/icon_15474.png" width="96">
-        </div>
-        <p>
-          <strong>Education</strong><br> « Vaut mieux avoir compris qu'avoir appris. »
-
-        </p>
-      </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-      <div class="feature">
-        <img src="img/icon_58198.png" width="96">
-        <p>
-          <strong>Partage et entraide</strong> <br> « Méfie-toi des gones que savent faire rien de rien, ils sont capable de tout. »
-        </p>
-      </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-      <div class="feature">
-        <img src="img/icon_43498.png" width="96">
-        <p>
-          <strong>Débats populaires</strong><br>« Le bon sens a beau courir les rues, personne lui court après. »
-        </p>
-      </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-      <div class="feature">
-        <img src="img/icon_43181.png" width="96">
-        <p>
-          <strong>Devenez volontaires !</strong><br> « Quand on n’a besoin de rien, tout le monde sont à votre service. »
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-<br>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 text-center">
-      <!-- Begin MailChimp Signup Form -->
-      <h4>Inscrivez-vous à la Newsletter</h4>
-      <div id="mc_embed_signup">
-        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate="">
-
-          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required="">
-
-          <input type="submit" value="Suivez-nous" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xs"></form></div>
-
-      </div>
-
-      <!--End mc_embed_signup-->
-    </div>
-  </div>
-
-
-
-
-      <div class="vertical-spacer"></div>
-
-    <div id="footer">
+  <div id="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">

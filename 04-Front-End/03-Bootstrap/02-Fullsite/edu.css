@@ -36,8 +36,8 @@ body {
 /* Lead with big image */
 
 .wrapper {
-  background-image: url("img/back.jpg");
-  height: 650px;
+  background-image: url("img/9768898495_195229a2d4_k.jpg");
+  height: 708px;
   background-size: cover;
   padding-top: 150px;
   text-align: center;
@@ -46,16 +46,16 @@ body {
 
 .lead h1 {
   font-size: 72px;
-  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+  text-shadow: 0 0 20px rgba(0, 0, 0, .9);
   font-weight: normal;
-  color:rgba( 230, 102, 63, 1);
+  color:#E82C0C;
 }
 
 .lead h2 {
 
   display: inline-block;
   padding: 0.2em;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 2em;
@@ -71,6 +71,17 @@ h3 {
 }
 ul {
   list-style-type: none;
+}
+h4 {
+ display: inline-block;
+  padding: 0.300em;
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+  color: #E82C0C;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+
 }
 
 
@@ -90,6 +101,12 @@ ul {
   color: #444444;
   font-weight: 300;
   letter-spacing: 1px;
+}
+#paragraphe {
+  color: black;
+}
+#paragraphe h3 {
+  font-weight: bold;
 }
 
 /* How to override the default Bootstrap colors */
@@ -139,4 +156,8 @@ ul {
 
 .mc_embed_signup {
   font-size: 10px;
+}
+.text {
+  text-align: center;
+
 }
