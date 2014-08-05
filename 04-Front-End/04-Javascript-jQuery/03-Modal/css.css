@@ -1,0 +1,20 @@
+.black {
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.jackie {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+}
+.jackie img {
+
+  width: 80%;
+}

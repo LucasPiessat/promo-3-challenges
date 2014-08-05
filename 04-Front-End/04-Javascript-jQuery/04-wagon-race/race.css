@@ -1,0 +1,18 @@
+#player1_race {
+  opacity: 0.7;
+}
+#player1_race .active{
+  background-color: red;
+}
+
+#player2_race {
+  opacity: 0.7;
+}
+#player2_race .active{
+  background-color: blue;
+}
+
+td {
+  width: 23px;
+  height: 23px;
+}
